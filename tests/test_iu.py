@@ -1,7 +1,6 @@
 from selenium import webdriver
 from pages.authPage import AuthPage
 from pages.mainPage import MainPage
-from time import sleep
 import allure
 
 
@@ -59,11 +58,10 @@ def test_input_destination(browser):
 def test_start_date(browser):
     main_page = MainPage(browser) 
     main_page.go()
-    #value_start_date=
     main_page.start_date(start_date)
     curient_url=main_page.get_current_url()  
     assert curient_url=="https://www.aviasales.ru/?params=UFA08041"
-    #assert value_start_date==start_date  
+   
 
 @allure.epic("AVIASELS UI")
 @allure.id("aviaseils_ui-5")

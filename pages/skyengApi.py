@@ -6,9 +6,7 @@ import allure
 class SkyengApi:
     def __init__(self, base_url: str) -> None:
         self.base_url = base_url
-        #self.taskId=taskId
-        #self.data=data
-        #self.search = search
+
 
     @allure.step("Просмотреть события")
     def events_api(self):
