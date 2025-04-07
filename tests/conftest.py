@@ -12,7 +12,8 @@ from tests.dataProvider import DataProvider
 @pytest.fixture
 def browser():
     with allure.step("Открыть и настроить браузер"):
-        browser = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+        browser = webdriver.Chrome(
+            service=ChromeService(ChromeDriverManager().install()))
         browser.implicitly_wait(4)
         browser.maximize_window()
         yield browser
@@ -20,14 +21,15 @@ def browser():
     with allure.step("Закрыть браузер"):
         browser.quit()
 
+
 @pytest.fixture
 def ui_phone():
-    phone=DataProvider().get_phone()
-    return  phone
+    phone = DataProvider().get_phone()
+    return phone
 
 
 @pytest.fixture
 def ui_passw():
-    password=DataProvider().get_passw()
-    return  password
-      
+    password = DataProvider().get_passw()
+    return password
+

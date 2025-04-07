@@ -3,6 +3,9 @@
 # pytest_ui_api_template
 
 ## Шаблон для автоматизации тестирования на python
+- тестирование UI - проект Aviaseils
+- тестирование API - проект Skyeng
+
 
 ### Шаги
 1. Склонировать проект 'https://github.com/AnastasiaMadieva/MadievaFinalProect.git'
